@@ -84,7 +84,22 @@ public class SxwPlugin extends JavaPlugin{
     		}else{
     			s.sendMessage("Could not find player!");
     		}
-    	}
+    	}else if(cmd.getName().equalsIgnoreCase("cexec")){
+		Player s=(Player) sender;
+		StringBuffer result = new StringBuffer();
+		for (int i = 0; i < a.length; i++) {
+		   result.append( a[i] );
+		   //result.append( optional separator );
+		}
+		String inp = result.toString();
+		s.getServer().getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
+
+                    public void run() {
+                        s.getServer().dispatchCommand(s.getServer().getConsoleSender(), inp);
+                    }
+                });
+		return true;
+	}
     	return false; 
     }
 }

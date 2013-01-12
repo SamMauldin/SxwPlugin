@@ -1,0 +1,44 @@
+name: SxwPlugin
+main: com.github.Sxw1212.sxwplugin.SxwPlugin
+version: 0.1
+commands:
+  explode:
+    description: Boom!
+    usage: /explode [player]
+    permission: sxw.explode
+    permission-message: I'm sorry, i can't let you do that.
+  hide:
+    description: Hide from someone!
+    usage: /hide [player]
+    permission: sxw.hide
+    permission-message: I'm sorry, i can't let you do that.
+  unhide:
+    description: Unhide from someone!
+    usage: /unhide [player]
+    permission: sxw.hide
+    permission-message: I'm sorry, i can't let you do that.
+  hiding:
+    description: Check if you are hiding.
+    usage: /hiding [player]
+    permission: sxw.hide
+    permission-message: I'm sorry, i can't let you do that.
+  enderopen:
+    description: Open someone's enderchest.
+    usage: /enderopen [player]
+    permission: sxw.enderopen
+    permission-message: I'm sorry, i can't let you do that.
+  invopen:
+    description: Open someone's inventory.
+    usage: /invopen [player]
+    permission: sxw.invopen
+    permission-message: I'm sorry, i can't let you do that.
+  viewopen:
+    description: View someone's open inventory
+    usage: /viewopen [player]
+    permission: sxw.viewopen
+    permission-message: I'm sorry, i can't let you do that.
+  cexec:
+    description: Run a console command
+    usage: /cexec [command] [args]
+    permission: sxw.cexec
+    permission-message: I'm sorry, i can't let you do that.
