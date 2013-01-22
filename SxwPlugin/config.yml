@@ -1,0 +1,2 @@
+consolealias:
+  test: "say $PLAYER ran the test alias!"
